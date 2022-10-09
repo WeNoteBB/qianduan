@@ -1,0 +1,48 @@
+ html {
+   font-size: 28px;
+   font-family: 'Open Sans', sans-serif;
+ }
+
+ h1 {
+   font-size: 60px;
+   text-align: center;
+   color: white;
+   background-color: white;
+ }
+
+ ul {
+   background-color: rgba(130, 122, 124, 0.3f);
+   padding: 10px;
+   margin: 20px;
+   /* border: 0.2px solid whitesmoke; */
+ }
+
+ p {
+   font-size: 50px;
+   margin: 36px;
+   color: whitesmoke;
+   /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+   line-height: 2;
+   letter-spacing: 1px;
+   text-shadow: 10px;
+ }
+
+ li {
+   font-size: 26px;
+   left: 100;
+   color: whitesmoke;
+   /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+   line-height: 2;
+   letter-spacing: 1px;
+ }
+
+ img {
+   width: fit-content;
+   height: auto;
+ }
+
+ body {
+   background-repeat: no-repeat;
+   background-color: azure;
+   text-shadow: 10px;
+ }
