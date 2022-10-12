@@ -45,4 +45,16 @@
    background-repeat: no-repeat;
    background-color: azure;
    text-shadow: 10px;
+   color: whitesmoke;
+ }
+
+ a {
+   color: whitesmoke;
+ }
+
+ dt,
+ dd {
+   color: white;
+   padding-left: 14px;
+   font-size: 14px;
  }

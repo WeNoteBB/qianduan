@@ -1,0 +1,50 @@
+<!-- Videos 音视频-->
+
+<!DOCTYPE html>
+
+<html>
+
+<script src="scripts/videos.js" defer></script>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="styles/style_videos.css" rel="stylesheet" />
+    <title>音视频页面</title>
+</head>
+
+<body>
+    <p> <b>Video and audio</b></p>
+
+    <p>
+    <h3>Below is an rabbit video</h3>
+    <video src="videos/rabbit320.mp4" controls>
+        <p>你的浏览器不支持H5视频，可以点击 <a href="videos/rabbit320.mp4">点此链接观看</a></p>
+    </video>
+    </p>
+
+    <p>
+    <h3>Below is an rabbit video</h3>
+    <video controls width="400px" height="400px" autoplay loop poster="images/chengqiang.jpg" preload="none">
+        <source src="videos/rabbit320.mp4" type="video/mp4">
+        <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+        <p>你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a>观看</p>
+    </video>
+    </p>
+
+
+
+    <p>
+    <h3>Below is an audio player that will play in all modern browsers</h3>
+    <audio id="myAudio" controls>
+        <source src="audio/viper.mp3" type="audio/mp3">
+        <p>你的浏览器不支持 HTML5 音频，可点击<a href="viper.mp3">此链接</a>收听。</p>
+    </audio>
+
+    <button id="myButton">重新播放</button>
+    </p>
+
+
+
+</body>
+
+</html>

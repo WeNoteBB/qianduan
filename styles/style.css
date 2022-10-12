@@ -1,10 +1,51 @@
-ul {
+/* ul {
   size: 100pt;
-  text-align: left; 
+  text-align: left;
   color: red;
-}
+} */
+
 p {
+  font-size: 50px;
   size: 100pt;
-  text-align: left; 
+  text-align: left;
   color: blue;
-} 
+}
+
+/* li.special,
+span.special {
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
+} */
+
+li {
+  font-size: 140%;
+}
+
+li em {
+  color: rebeccapurple;
+  font-size: 130%;
+}
+
+
+
+a {
+  font-size: 200%;
+}
+
+a:visited {
+  color: red
+}
+
+a:link {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1+p {
+  color: red;
+  font-size: 800%;
+}
