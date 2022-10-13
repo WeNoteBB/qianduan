@@ -1,9 +1,9 @@
 let myHeading = document.querySelector('p')
 // myHeading.textContent = 'Hello! Welcome to CoderBar'
-myHeading.onclick = function () {
-    //myHeading.textContent = 'Welcome to CoderBar!!!'
-    alert('欢迎来到编程吧');
-}
+// myHeading.onclick = function () {
+//     //myHeading.textContent = 'Welcome to CoderBar!!!'
+//     alert('欢迎来到编程吧');
+// }
 
 
 

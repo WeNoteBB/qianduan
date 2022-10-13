@@ -14,13 +14,22 @@
    background-color: rgba(130, 122, 124, 0.3f);
    padding: 10px;
    margin: 20px;
+   list-style-type: circle;
    /* border: 0.2px solid whitesmoke; */
+ }
+
+ .bodystyle {
+   background-image: url('../images/xinxilan2.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   width: 100%;
+   height: 100%;
  }
 
  p {
    font-size: 50px;
    margin: 36px;
-   color: whitesmoke;
+   color: black;
    /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
    line-height: 2;
    letter-spacing: 1px;
@@ -30,7 +39,7 @@
  li {
    font-size: 26px;
    left: 100;
-   color: whitesmoke;
+   color: black;
    /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
    line-height: 2;
    letter-spacing: 1px;
@@ -41,20 +50,30 @@
    height: auto;
  }
 
- body {
-   background-repeat: no-repeat;
-   background-color: azure;
-   text-shadow: 10px;
-   color: whitesmoke;
- }
-
  a {
-   color: whitesmoke;
+   color: black;
  }
 
  dt,
  dd {
-   color: white;
+   color: black;
    padding-left: 14px;
    font-size: 14px;
+ }
+
+ #aboutus {
+   background-color: green;
+   padding: 30px 30px 30px 30px;
+   width: fit-content;
+   border-style: solid;
+   border: transparent;
+   border-width: 1px;
+   margin-left: 10px;
+   border-radius: 12px;
+ }
+
+ .linkstyle {
+   text-decoration: none;
+   letter-spacing: 5px;
+   font-size: 1em;
  }
