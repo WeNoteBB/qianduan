@@ -3,11 +3,20 @@
    font-family: 'Open Sans', sans-serif;
  }
 
- h1 {
+
+
+ /* h1 {
    font-size: 60px;
    text-align: center;
    color: white;
    background-color: white;
+ } */
+
+ /* 头部样式 */
+ .header {
+   background-color: gray;
+   color: black;
+   text-align: center;
  }
 
  ul {
@@ -21,7 +30,11 @@
  .bodystyle {
    background-image: url('../images/xinxilan2.jpg');
    background-repeat: no-repeat;
-   background-attachment: fixed;
+   background-attachment: scroll;
+   background-position-x: center;
+   align-content: center;
+   align-items: center;
+   align-content: center;
    width: 100%;
    height: 100%;
  }
@@ -29,6 +42,7 @@
  p {
    font-size: 50px;
    margin: 36px;
+   background-position-x: center;
    color: black;
    /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
    line-height: 2;
