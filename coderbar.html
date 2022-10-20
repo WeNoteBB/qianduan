@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
 
 <head>
     <link href="styles/coderbar.css" rel="stylesheet">
@@ -14,30 +12,110 @@
 
 <script src="scripts/main.js" defer></script>
 
+<style>
+    .navi {
+        width: 100%;
+        height: 70px;
+        background: rgba(55, 55, 55, 0.99);
+        margin: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-basis: auto;
+    }
+
+    .navi-icon {
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .navi-item {
+        display: inline;
+        left: 16px;
+    }
+
+    .navi-text {
+        color: white;
+        font-size: 16px;
+        display: block;
+        margin-left: 12px;
+    }
+
+    .navi-blank {
+        flex-grow: 1;
+    }
+
+    .navi-text-right {
+        float: right;
+        color: white;
+        margin-right: 16px;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    /**
+    搜索框
+    */
+    .navi-search {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navi-searchTerm {
+        width: 280px;
+        border: 1px solid gray;
+        border-right: none;
+        padding: 2px;
+        height: 28px;
+        font-size: 11px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+        background: black;
+    }
+
+    .navi-searchTerm:focus {
+        color: white;
+        width: 380px;
+        font-size: 11px;
+        border-right: none;
+        border: 3px solid gray;
+        background-color: black;
+    }
+
+    .navi-searchButton {
+        width: 40px;
+        height: 34px;
+        border: 1px solid gray;
+        background: black;
+        text-align: center;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 10px;
+    }
+</style>
+</style>
+
 <body class="body">
-    <ul id="navigationBar">
-        <li>
-            <div id="navigationIconDiv">
-                <img class="navigationIcon" src="images/whale3.png">
-            </div>
-        </li>
+    <div class="navi">
+        <img class="navi-icon" src="images/whale3.png">
 
-        <li>
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="你想找什么?">
-                <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </li>
+        <div class="navi-search">
+            <input type="text" class="navi-searchTerm" placeholder="搜索资源">
+            <button type="submit" class="navi-searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
 
-        <li style="float:right"><a class="active" href="#about">关于</a></li>
-    </ul>
-
-    <div class="select_item">
-
-        <p class="select_item_text">diu</p>
+        <div class="navi-item navi-text">收藏</div>
+        <div class="navi-item navi-text">关注</div>
+        <div class="navi-item navi-blank"></div>
+        <div class="navi-text-right">登录</div>
     </div>
+
+
 </body>
 
 </html>
