@@ -34,15 +34,17 @@
     }
 
     .navi-item {
-        display: inline;
+        display: inline-block;
         left: 16px;
+        cursor: pointer;
     }
 
     .navi-text {
         color: rgba(190, 190, 190);
         font-size: 14px;
-        display: block;
+        display: inline-block;
         margin-left: 12px;
+        cursor: pointer;
     }
 
     .navi-blank {
@@ -54,7 +56,7 @@
         color: rgba(190, 190, 190);
         font-size: 14px;
         margin-right: 16px;
-
+        cursor: pointer;
     }
 
     .navi-search {
@@ -101,20 +103,55 @@
       菜单
       */
     .menu {
+        float: left;
         display: flex;
         flex-direction: column;
         width: 10%;
         background: rgba(55, 55, 55, 0.99);
-        margin-left: 22px;
-        margin-top: 58px;
+        margin-left: 28px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+        border-color: gray;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px, rgba(188, 188, 188, 0.99);
+        border: 1px solid rgba(99, 99, 99, 0.99);
+        height: max-content;
+    }
+
+
+    /* .content {
+        float: right;
+        margin-left: 28px;
+        flex-direction: column;
+        width: fit-content;
+        background: rgba(55, 55, 55, 0.99);
+        margin-top: 28px;
         margin-bottom: 20px;
         border-color: gray;
         border-radius: 12px;
         box-shadow: 2px 2px 2px, rgba(188, 188, 188, 0.99);
         border: 1px solid rgba(99, 99, 99, 0.99);
         height: auto;
+    }   */
+
+    .grid-container {
+        margin-left: 28px;
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: transparent;
+
     }
 
+    .grid-item {
+        background-color: transparent;
+        border: 18px solid transparent;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
 
     .menu-text_top {
         width: auto;
@@ -149,9 +186,18 @@
         font-size: 14px;
     }
 
+    .bottom-bar {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        position: fixed;
+        bottom: 0%;
+        background-color: rgba(100, 100, 100, 0.92);
+        margin: 0px;
+    }
+
     .menu-text_bottom {
         width: auto;
-
         border-left: none;
         border-right: none;
         border-top: none;
@@ -208,6 +254,29 @@
     </div>
 
 
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <div class="bottom-bar">
+        <p>CoderBar @copyright</p>
+    </div>
 </body>
 
 </html>
