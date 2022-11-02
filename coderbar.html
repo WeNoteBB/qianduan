@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <title>CoderBar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <script src="scripts/main.js" defer></script>
 
 <style>
+    /**
+       导航栏
+       */
     .navi {
         width: 100%;
         height: 70px;
@@ -25,7 +29,7 @@
     }
 
     .navi-icon {
-        height: 50px;
+        height: 36px;
         margin-left: 20px;
     }
 
@@ -35,8 +39,8 @@
     }
 
     .navi-text {
-        color: white;
-        font-size: 16px;
+        color: rgba(190, 190, 190);
+        font-size: 14px;
         display: block;
         margin-left: 12px;
     }
@@ -47,15 +51,12 @@
 
     .navi-text-right {
         float: right;
-        color: white;
+        color: rgba(190, 190, 190);
+        font-size: 14px;
         margin-right: 16px;
-        font-size: 16px;
-        vertical-align: middle;
+
     }
 
-    /**
-    搜索框
-    */
     .navi-search {
         margin-left: 16px;
         display: flex;
@@ -95,8 +96,91 @@
         cursor: pointer;
         font-size: 10px;
     }
+
+    /**
+      菜单
+      */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        background: rgba(55, 55, 55, 0.99);
+        margin-left: 22px;
+        margin-top: 58px;
+        margin-bottom: 20px;
+        border-color: gray;
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px, rgba(188, 188, 188, 0.99);
+        border: 1px solid rgba(99, 99, 99, 0.99);
+        height: auto;
+    }
+
+
+    .menu-text_top {
+        width: auto;
+        border: 0.5px solid rgba(100, 100, 100, 0.92);
+        border-radius: 12px, 0px, 12px, 0px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        font-size: 16px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0px;
+        display: block;
+        color: rgba(190, 190, 190);
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .menu-text {
+        width: auto;
+        border: 0.5px solid rgba(100, 100, 100, 0.92);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        font-size: 16px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0px;
+        display: block;
+        color: rgba(190, 190, 190);
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .menu-text_bottom {
+        width: auto;
+
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        font-size: 16px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0px;
+        display: block;
+        color: rgba(190, 190, 190);
+        text-align: center;
+        font-size: 14px;
+    }
+
+    p.menu-text:hover {
+        background: rgba(83, 83, 83, 0.99);
+    }
+
+    p.menu-text_top:hover {
+        border-radius: 12px 12px 0px 0px;
+        background: rgba(83, 83, 83, 0.99);
+    }
+
+    p.menu-text_bottom:hover {
+        border-radius: 0px 0px 12px 12px;
+        background: rgba(83, 83, 83, 0.99);
+    }
 </style>
-</style>
+
+
 
 <body class="body">
     <div class="navi">
@@ -113,6 +197,14 @@
         <div class="navi-item navi-text">关注</div>
         <div class="navi-item navi-blank"></div>
         <div class="navi-text-right">登录</div>
+    </div>
+
+    <div class="menu">
+        <p class="menu-text_top">Android</p>
+        <p class="menu-text">IOS</p>
+        <p class="menu-text">Java</p>
+        <p class="menu-text">Redis</p>
+        <p class="menu-text_bottom">MySql</p>
     </div>
 
 

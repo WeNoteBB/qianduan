@@ -8,34 +8,59 @@
     <link rel="icon" href="https://alifei02.cfp.cn/creative/vcg/800/new/VCG211229328077.jpg" />
     <title>CoderBar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+
+        function test(a, b) {
+            a = 100;
+            b = 200;
+            return a + b;
+
+        }
+
+        var a = 3;
+        var b = 5;
+
+        test(3, 1)
+
+        console.log("zhang-- " + a);
+        console.log("zhang-- " + b);
+        function loadXMLDoc() {
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xmlhttp.onreadystatechange = function () {
+                console.log("zhang" + xmlhttp.readyState)
+                console.log("zhang" + xmlhttp.status)
+                console.log("zhang" + xmlhttp.responseText)
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                } else {
+                    document.getElementById("myDiv").innerHTML = "jee" + xmlhttp.status;
+                }
+            }
+            xmlhttp.open("GET", "http://43.139.20.80:9009/user", true);
+            xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "http://43.139.20.80:9009");
+            xmlhttp.setRequestHeader("Content-Type", "application/json");
+            xmlhttp.send();
+        }
+    </script>
 </head>
 
 <script src="scripts/main.js" defer></script>
 
-<body class="bodystyle" title="Welcome to CoderBar コーダー バーへようこそ">
-    <div class="header">
-        <h1>头部区域</h1>
-    </div>
+<body title="">
 
-    <!-- <dl id="aboutus">
-        <dt>
-            <b>About CoderBar</b>
-        </dt>
-
-        <dd>
-            you can download any IT videos on this web!!!
-        </dd>
-
-    </dl> <a href="https://www.wanandroid.com/" Android></a>
-    <ul>
-        <li> <a class="linkstyle" href="index.html">Android</a></li>
-        <li>Ios</li>
-        <li>Java</li>
-        <li>Kotlin</li>
-        <li>Python</li>
-    </ul> -->
-
-    <!-- <button>切换用户</button> -->
+    <h2>AJAX</h2>
+    <button type="button" onclick="loadXMLDoc()">请求数据</button>
+    <div id="myDiv"></div>
 </body>
 
 </html>
