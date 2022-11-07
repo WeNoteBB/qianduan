@@ -30,6 +30,7 @@
             if (window.XMLHttpRequest) {
                 // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
                 xmlhttp = new XMLHttpRequest();
+                xmlhttp.withCredentials = true
             }
             else {
                 // IE6, IE5 浏览器执行代码
@@ -47,8 +48,8 @@
                 }
             }
             xmlhttp.open("GET", "http://43.139.20.80:9009/user", true);
-            xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "http://43.139.20.80:9009");
-            xmlhttp.setRequestHeader("Content-Type", "application/json");
+            xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+            xmlhttp.setRequestHeader("Content-Type", "text/plain");
             xmlhttp.send();
         }
     </script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+
+<head>
+    <link href="styles/style2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script src="scripts/vue.global.js"></script>
+</head>
+
+
+<body>
+    <div id="hello-vue" class="demo">
+
+        <p>1、使用双大括号的文本插值: {{ rawHtml }}</p>
+        <p>2、使用 v-html 指令: <span v-html="rawHtml"></span></p>
+    </div>
+
+    <script>
+
+        const helloVuewApp = {
+            data() {
+                return {
+                    rawHtml: '<span style="color: red">这里会显示红色！</span>'
+                }
+            }
+        }
+
+        Vue.createApp(helloVuewApp).mount('#hello-vue')
+    </script>
+</body>
+
+
+</html>
